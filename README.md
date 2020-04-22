@@ -1,11 +1,11 @@
 # CRUD_TEST
 
-# Desafio   🚀💻 
+# Desafios   🚀💻 
 
 ## Objetivo: Criar uma aplicação web; 
-## Server: NodeJs + Express + Mongoose; 
+## Server: NodeJs 
 ## Banco de dados: MongoDB, postgresql;
-## Client: Javascript+ CSS + HTML (podem ser utilizados frameworks adicionais);
+## Client: Javascript + CSS + HTML (podem ser utilizados frameworks adicionais);
 
 # Funcionalidades:
 
