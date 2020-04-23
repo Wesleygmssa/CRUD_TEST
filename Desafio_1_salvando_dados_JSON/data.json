@@ -1,0 +1,15 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Wesley Masculino Moreira",
+      "cpf": "000.000.000.05",
+      "email": "wesleyguerra9@gmail.com",
+      "tel": "71986044255",
+      "gender": "M",
+      "birth": 654739200000,
+      "created_at": 1587601469143,
+      "service": "Dev, suporte"
+    }
+  ]
+}
