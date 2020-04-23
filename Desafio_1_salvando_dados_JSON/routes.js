@@ -16,6 +16,8 @@ routes.get('/usuarios/create', (req , res)=>{
     return res.render('usuarios/create');
 });
 
+routes.get('/usuarios/:id',usuarios.show);
+
 routes.post('/usuarios', usuarios.post);
 
 routes.get('/members', (req , res)=>{

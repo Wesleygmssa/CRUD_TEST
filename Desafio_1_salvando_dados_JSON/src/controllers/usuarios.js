@@ -2,8 +2,20 @@ const fs = require('fs'); // trabalha com arquivo dos sistemas
 const data = require('../../data.json');
 
 module.exports = {
+//show
+show(req, res){
+    const {id} = req.params;
 
+    const foundUsuario = data.usuarios.find((usuario)=>{// retorno true ou false
+        return usuario.id == id;
+    })
 
+    if(!foundUsuario) return res.send("Usuario not found");
+
+    return res.render('usuarios/show',{usuario:foundUsuario})
+},
+
+//create
     post(req, res){
         const keys = Object.keys(req.body); //retorna um array com a chaves do objeto
     

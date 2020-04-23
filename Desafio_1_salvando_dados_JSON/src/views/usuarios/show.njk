@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+    <div class="card">
+        <div class="details">
+
+            <h3>Detalhes</h3>
+        
+        <div class="item">
+            <div>NOME</div>
+            <div>{{usuario.name}}</div>
+        </div>
+
+        <div class="item">
+            <div>CPF</div>
+            <div>{{usuario.cpf}}</div>
+        </div>
+
+        <div class="item">
+            <div>E-MAIL</div>
+            <div>{{usuario.email}}</div>
+        </div>
+
+        <div class="item">
+            <div>TELEFONE</div>
+            <div>{{usuario.tel}}</div>
+        </div>
+
+        <div class="item">
+            <div>SEXO</div>
+            <div>{{usuario.gender}}</div>
+        </div>
+
+        <div class="item">
+            <div>Idade</div>
+            <div>{{usuario.birth}}</div>
+        </div>
+
+        <div class="item">
+            <div>Atividade</div>
+            <div>{{usuario.services}}</div>
+        </div>
+        </div>
+        
+    </div>
+{% endblock content %}
