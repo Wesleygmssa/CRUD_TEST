@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+
+<div class="card">
+    <form method="POST" action="/usuarios?_method=PUT">
+        <div class="details">
+
+            <h3>Editar usuario</h3>
+
+            {% include 'usuarios/fields.njk' %}
+
+            <input type="hidden" name="id" value="{{usuario.id}}">
+      
+    </form>
+
+         <form id="form-delete" action="/usuarios?_method=DELETE" method="POST">
+              <input type="hidden" name="id" value={{usuario.id}}>
+             <button class="button" type="submit">Deletar</button>
+          </form>
+</div>
+
+    </div>
+
+
+{% endblock content %}

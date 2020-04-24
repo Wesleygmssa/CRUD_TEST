@@ -4,6 +4,8 @@
 ### Desafio_1 concluido dados sendo salvo no proprio arquivo data.json.
   <img src="desafio_1.gif" >
 
+### Desafio_1 (em andamento dados serão salvo no banco de dados).
+
 ## Objetivo: Criar uma aplicação web; 
 ## Server: NodeJs 
 ## Banco de dados: MongoDB, postgresql;

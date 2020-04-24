@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+    <div class="card table-container" >
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>CPF</th>
+                    <th>Ação</th>
+                    <th></th>
+                </tr>
+            </thead>
+       
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.cpf}}</td>
+                <td><a class="button" href="/usuarios/{{usuario.id}}">Ver</a></td>
+                <td><a class="button" href="/usuarios/create">Novo</a></td>
+            </tr>
+         {% endfor %}
+            
+        </tbody>
+    </table>    
+    </div>
+{% endblock content %}

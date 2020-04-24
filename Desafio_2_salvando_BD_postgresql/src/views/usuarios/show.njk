@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+    <div class="card">
+        <div class="details">
+
+            <h3>Detalhes</h3>
+        
+        <div class="item">
+            <div>NOME</div>
+            <div>{{usuario.name}}</div>
+        </div>
+
+        <div class="item">
+            <div>CPF</div>
+            <div>{{usuario.cpf}}</div>
+        </div>
+
+        <div class="item">
+            <div>E-MAIL</div>
+            <div>{{usuario.email}}</div>
+        </div>
+
+        <div class="item">
+            <div>TELEFONE</div>
+            <div>{{usuario.tel}}</div>
+        </div>
+
+        <div class="item">
+            <div>SEXO</div>
+            <div>{{ "Masculino" if usuario.gender =="M" else "Feminino"}}</div>
+        </div>
+
+        <div class="item">
+            <div>Idade</div>
+            <div>{{usuario.age}}</div>
+        </div>
+
+        <div class="item" id="services">
+            <div>Atividade</div>
+            {% for service in usuario.services %}
+            <div>{{service}}</div>
+            {% endfor %}
+        </div>
+
+        <div class="item">
+            <div>Desde</div>
+            <div>{{usuario.created_at}}</div>
+        </div>
+
+        <a href="/usuarios/{{usuario.id}}/edit"><button class="button">Editar</button></a>
+        </div>
+
+       
+        
+    </div>
+{% endblock content %}
