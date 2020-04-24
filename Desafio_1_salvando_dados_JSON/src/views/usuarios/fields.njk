@@ -1,0 +1,89 @@
+<div class="item">
+            <div>NOME</div>
+            <div>
+                <input 
+                type="text"
+                name="name"
+                value="{{usuario.name}}"
+
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>CPF</div>
+            <div>
+                <input 
+                type="text"
+                name="cpf"
+                value="{{usuario.cpf}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>E-MAIL</div>
+            <div>
+                <input 
+                type="email"
+                name="email"
+                value="{{usuario.email}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>TELEFONE</div>
+            <div>
+                <input 
+                type="text"
+                name="tel"
+                value="{{usuario.tel}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>SEXO</div>
+            <div>
+                <span><input 
+                type="radio" 
+                name="gender" 
+                value="M" 
+                {% if usuario.gender == 'M' %}
+                    checked 
+                {% endif %}>Masculino</span>
+                <span><input 
+                type="radio" 
+                name="gender" 
+                value="F"
+                {% if usuario.gender == 'F' %}
+                    checked 
+                {% endif %}
+                >Feminino</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Nascimento</div>
+            <div>
+                <input 
+                type="date"
+                name="birth"
+                value="{{usuario.birth}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Atividade</div>
+            <div>
+                <input 
+                type="text"
+                name="services"
+                value="{{usuario.services}}"
+                >
+            </div>
+        </div>
+
+        <button class="button" type="submit">Salvar</button>

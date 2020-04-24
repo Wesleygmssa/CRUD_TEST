@@ -7,77 +7,9 @@
 
             <h3>Novo usuario</h3>
         
-        <div class="item">
-            <div>NOME</div>
-            <div>
-                <input 
-                type="text"
-                name="name"
-
-                >
+                 {% include 'usuarios/fields.njk' %}
+       
             </div>
-        </div>
-
-        <div class="item">
-            <div>CPF</div>
-            <div>
-                <input 
-                type="text"
-                name="cpf"
-                >
-            </div>
-        </div>
-
-        <div class="item">
-            <div>E-MAIL</div>
-            <div>
-                <input 
-                type="email"
-                name="email"
-                >
-            </div>
-        </div>
-
-        <div class="item">
-            <div>TELEFONE</div>
-            <div>
-                <input 
-                type="text"
-                name="tel"
-                >
-            </div>
-        </div>
-
-        <div class="item">
-            <div>SEXO</div>
-            <div>
-                <span><input type="radio" name="gender" value="M" checked>Masculino</span>
-                <span><input type="radio" name="gender" value="F">Feminino</span>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Idade</div>
-            <div>
-                <input 
-                type="date"
-                name="birth"
-                >
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Atividade</div>
-            <div>
-                <input 
-                type="text"
-                name="service"
-                >
-            </div>
-        </div>
-
-        <button class="button" type="submit" >Salvar</button>
-        </div>
         
       
     </form>

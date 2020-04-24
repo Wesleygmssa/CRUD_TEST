@@ -28,7 +28,7 @@ font-family: Roboto, sans-serif;
 .button{
 width: 100%;
 border: 0;
-margin-top: 30px;
+margin-top: 23px;
 background: #7d40e7;
 border-radius: 2px;
 padding: 15px 20px;
@@ -96,7 +96,7 @@ transition: width 800ms ease-in-out;
 /* ==CARD == */
 .card{
 background: #fff;
-max-width: 800px;
+max-width: 900px;
 width: 100%;
 height: auto;
 border-radius: 3px;
@@ -138,11 +138,11 @@ border: 0;
 .details h3,
 .details .item div:nth-child(1){
 color: #aaa;
-font-size: 14px;
+font-size: 16px;
 letter-spacing: 2px;
 font-weight: normal;
 }
-
+#services,
 .details .item div:nth-child(2){
 margin-top: 10px;
 color: #555;
@@ -156,6 +156,14 @@ font-size: 16px;
 text-transform: uppercase;
 font-weight: bold;
 color: var(--primary-color);
+}
+
+#services div + div{
+    display: inline-block;
+    padding: 16px;
+    border-radius: 5px;
+    color:#fff;
+    background-color: var(--primary-color);
 }
 
 
@@ -190,4 +198,37 @@ margin-left: 5px;
     padding: 18px;
     border-radius: 10px;
     color: #fff;
+}
+
+#form-delete button{
+    background-color:rgb(172, 23, 23);
+}
+
+
+/* index usuarios */
+
+.table-container {
+    padding: 40px;
+}
+
+.table-container table{
+    border-spacing: 0;
+}
+
+.table-container thead tr th{
+    text-align: left;
+}
+
+td , th{
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9 ;
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+
+tbody tr td a.button{
+    text-decoration: none;
+    padding: 12px;
 }

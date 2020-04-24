@@ -29,19 +29,30 @@
 
         <div class="item">
             <div>SEXO</div>
-            <div>{{usuario.gender}}</div>
+            <div>{{ "Masculino" if usuario.gender =="M" else "Feminino"}}</div>
         </div>
 
         <div class="item">
             <div>Idade</div>
-            <div>{{usuario.birth}}</div>
+            <div>{{usuario.age}}</div>
+        </div>
+
+        <div class="item" id="services">
+            <div>Atividade</div>
+            {% for service in usuario.services %}
+            <div>{{service}}</div>
+            {% endfor %}
         </div>
 
         <div class="item">
-            <div>Atividade</div>
-            <div>{{usuario.services}}</div>
+            <div>Desde</div>
+            <div>{{usuario.created_at}}</div>
         </div>
+
+        <a href="/usuarios/{{usuario.id}}/edit"><button class="button">Editar</button></a>
         </div>
+
+       
         
     </div>
 {% endblock content %}

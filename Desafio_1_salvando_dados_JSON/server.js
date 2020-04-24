@@ -6,7 +6,7 @@ const methodOverride = require('method-override'); // usando o metodo put
 
 server.use(express.urlencoded({extended:true})); // lendo dados formulario
 server.use(express.static('public')); //style.css, img , js etc..
-server.use(methodOverride('_method')); //usar method put
+server.use(methodOverride('_method')); //usar method put, tem q ser antes da rota
 server.use(routes); // configurando rotas
 
 

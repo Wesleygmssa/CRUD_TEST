@@ -2,46 +2,28 @@
 
 
 {% block content %}
-    <div class="card">
-        <div class="details">
-
-            <h3>Detalhes</h3>
-        
-        <div class="item">
-            <div>NOME</div>
-            <div>Wesley Guerra</div>
-        </div>
-
-        <div class="item">
-            <div>CPF</div>
-            <div>000.000.000-00</div>
-        </div>
-
-        <div class="item">
-            <div>E-MAIL</div>
-            <div>Wesleyguerra9@gmail.com</div>
-        </div>
-
-        <div class="item">
-            <div>TELEFONE</div>
-            <div>(71)9.9253-8054</div>
-        </div>
-
-        <div class="item">
-            <div>SEXO</div>
-            <div>Masculino</div>
-        </div>
-
-        <div class="item">
-            <div>Idade</div>
-            <div>29</div>
-        </div>
-
-        <div class="item">
-            <div>Atividade</div>
-            <div>Dev, suporte</div>
-        </div>
-        </div>
-        
+    <div class="card table-container" >
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>CPF</th>
+                    <th>Ação</th>
+                    <th></th>
+                </tr>
+            </thead>
+       
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.cpf}}</td>
+                <td><a class="button" href="/usuarios/{{usuario.id}}">Ver</a></td>
+                <td><a class="button" href="/usuarios/create">Novo</a></td>
+            </tr>
+         {% endfor %}
+            
+        </tbody>
+    </table>    
     </div>
 {% endblock content %}

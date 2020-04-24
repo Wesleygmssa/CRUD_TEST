@@ -1,6 +1,8 @@
 # CRUD_TEST
 
 # Desafios   🚀💻 
+### Desafio_1 concluido dados sendo salvo no proprio arquivo data.json.
+  <img src="desafio_1.gif" >
 
 ## Objetivo: Criar uma aplicação web; 
 ## Server: NodeJs 
