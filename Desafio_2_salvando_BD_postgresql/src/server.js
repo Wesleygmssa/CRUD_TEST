@@ -13,7 +13,7 @@ server.use(routes); // configurando rotas
 //template engine
 server.set('view engine', 'njk');
 
-nunjucks.configure('src/views', { 
+nunjucks.configure('src/app/views', { 
     express: server,
     autoescape: false, // - pegando formatação html 
     noCache: true // - tirando o cache

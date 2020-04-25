@@ -3,13 +3,14 @@
 
 {% block content %}
     <div class="card table-container" >
+       <td><a class="button" href="/usuarios/create">Novo</a></td>
         <table width="100%">
+          
             <thead>
                 <tr>
                     <th>Usuário</th>
                     <th>CPF</th>
                     <th>Ação</th>
-                    <th></th>
                 </tr>
             </thead>
        
@@ -19,7 +20,6 @@
                 <td>{{usuario.name}}</td>
                 <td>{{usuario.cpf}}</td>
                 <td><a class="button" href="/usuarios/{{usuario.id}}">Ver</a></td>
-                <td><a class="button" href="/usuarios/create">Novo</a></td>
             </tr>
          {% endfor %}
             
