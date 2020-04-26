@@ -23,7 +23,7 @@ show(req, res){
         usuario.created_at = date(usuario.created_at).format
 
         return res.render('usuarios/show',{usuario})
-    })
+    });
 },
 
 //create cadastrando usuário
@@ -38,25 +38,46 @@ post(req, res){
         }
 
        Usuario.create(req.body, (usuario)=>{
-            return res.redirect(`/usuarios/${usuarios.id}`)
+            return res.redirect(`/usuarios`)
        })
     
     },
 
 //edit
 edit(req, res){
+    //pegando id pelo req.params
+    Usuario.find(req.params.id, (usuario)=>{
+        if(!usuario) return res.send("Usuario não encontrado!");
 
-    return
+        usuario.birth = date(usuario.birth).iso
+
+        return res.render('usuarios/edit',{usuario})
+    });
 },
 
 put(req, res){
+    const keys = Object.keys(req.body); //retorna um array com a chaves do objeto
     
-    return
+    for(key of keys){// validação dos campos
+        if(req.body[key] == "" ){
+            return res.send('Please, fill all fildes');
+        }
+    }
+
+    Usuario.update(req.body, ()=>{
+
+    return res.redirect(`/usuarios/${req.body.id}`)
+    })
+    
+    
 },
 
 delete(req, res){
 
-    return
+    Usuario.delete(req.body.id,()=>{
+
+        return res.redirect(`/usuarios`)
+    })
 }     
 
     

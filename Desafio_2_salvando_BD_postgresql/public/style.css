@@ -207,6 +207,14 @@ margin-left: 5px;
 
 /* index usuarios */
 
+.table-container a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
 .table-container {
     padding: 40px;
 }
