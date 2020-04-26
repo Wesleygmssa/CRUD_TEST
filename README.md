@@ -2,6 +2,7 @@
 
 # Desafios   🚀💻 
 ### Desafio_1 concluido dados sendo salvo no proprio arquivo data.json.
+### Desafio_2 concluido dados sendo salvo no banco de dados sql.
   <img src="desafio_1.gif" >
 
 ### Desafio_1 (em andamento dados serão salvo no banco de dados).
